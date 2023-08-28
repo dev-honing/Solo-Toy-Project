@@ -9,3 +9,5 @@ ddddddddddd
   2. Staging Area - (git commit) -> Repository
   
   Q. 언제 커밋하냐? A. 간단한 기능을 추가했을 때
+
+멈추고 직접 해보기 - main branch로 이동해서 커밋하기
