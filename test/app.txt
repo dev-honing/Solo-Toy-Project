@@ -11,3 +11,4 @@ ddddddddddd
   Q. 언제 커밋하냐? A. 간단한 기능을 추가했을 때
 
 git branch 새로운 이름
+git switch 새로운 이름
