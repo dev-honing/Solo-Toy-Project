@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 bbbbbbbbbbb
 ccccccccccc
@@ -10,6 +11,7 @@ ddddddddddd
   
   Q. 언제 커밋하냐? A. 간단한 기능을 추가했을 때
 
+<<<<<<< HEAD
 멈추고 직접 해보기 - main branch로 이동해서 커밋하기
 꽤 재밌는데 어떤 위치에 커밋하고 있는 걸까
 
@@ -23,3 +25,14 @@ main branch로 돌아와서 test branch와 merge 해보자(git merge test)
     1. 원하는 코드만 남기고
     2. git add
     3. git commit
+=======
+git branch 새로운 이름
+git switch 새로운 이름
+
+또또 더 해보자 - test branch로 이동해서 커밋하기
+뭐지 버근가
+
+git log --oneline --all --graph 명령어 써보기
+
+test branch를 main branch에 합치고 싶다
+>>>>>>> test
