@@ -17,3 +17,5 @@ git switch 새로운 이름
 뭐지 버근가
 
 git log --oneline --all --graph 명령어 써보기
+
+test branch를 main branch에 합치고 싶다
