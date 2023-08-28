@@ -15,3 +15,5 @@ git switch 새로운 이름
 
 또또 더 해보자 - test branch로 이동해서 커밋하기
 뭐지 버근가
+
+git log --oneline --all --graph 명령어 써보기
