@@ -5,4 +5,5 @@ bbbbbbbbbbb
 작업 폴더 -> Staging Area -> Repository
 
   1. 작업 폴더 - (git add) -> Staging Area
+  2. Staging Area - (git commit) -> Repository
   
