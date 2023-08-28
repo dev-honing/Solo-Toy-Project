@@ -7,3 +7,4 @@ bbbbbbbbbbb
   1. 작업 폴더 - (git add) -> Staging Area
   2. Staging Area - (git commit) -> Repository
   
+  Q. 언제 커밋하냐? A. 간단한 기능을 추가했을 때
