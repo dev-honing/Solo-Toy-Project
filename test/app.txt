@@ -14,3 +14,4 @@ git branch 새로운 이름
 git switch 새로운 이름
 
 또또 더 해보자 - test branch로 이동해서 커밋하기
+뭐지 버근가
