@@ -1,6 +1,6 @@
 aaaaaaaaaaa
 bbbbbbbbbbb
-
+ccccccccccc
 
 작업 폴더 -> Staging Area -> Repository
 
