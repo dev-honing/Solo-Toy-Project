@@ -1,4 +1,4 @@
-main branch에서 수정
+
 bbbbbbbbbbb
 ccccccccccc
 ddddddddddd
@@ -17,3 +17,9 @@ A가 a파일을 수정하고, B가 b파일을 수정하면 얼마나 좋을까? 
 그런데, A가 a파일 수정했는데, B도 a파일을 수정할 수도 있다
 심지어 같은 줄을 수정했다면??
 -> 컴퓨터는 어떤 것을 먼저 적용해서 merge해야 할지 몰라 혼란스러워 한다.
+
+main branch로 돌아와서 test branch와 merge 해보자(git merge test)
+  git conflict 해결법
+    1. 원하는 코드만 남기고
+    2. git add
+    3. git commit
