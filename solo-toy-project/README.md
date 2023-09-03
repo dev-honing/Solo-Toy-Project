@@ -1,1 +1,1 @@
-# KDT
+Just for fun. My hobby!
