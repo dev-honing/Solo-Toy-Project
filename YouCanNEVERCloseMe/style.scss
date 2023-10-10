@@ -41,24 +41,21 @@
       div:nth-child(1) {
       @include set-border;
       @include set-flex;
-      @include set-color(#000, #34b7eb);
       width: 70vw;
       height: 2vh;
         div {
           @include text-align;
+          @include set-color(#000, #34b7eb);
         }
         // 에러 제목 텍스트 영역
         div:nth-child(1) {
           width: 35vw;
           height: 2vh;
-          
-          
         }
         // 닫기 버튼 영역
         div:nth-child(2) {
           width: 35vw;
           height: 2vh;
-          
         }
     }
       // Footer 영역
@@ -67,13 +64,14 @@
       @include set-flex;
       width: 70vw;
       height: 8vh;
-      @include set-color(#000, #ebeced);
       @include text-align;
+        div { 
+          @include set-color(#000, #ebeced);
+        }
         // 경고 이미지 영역
         div:nth-child(1) {
           width: 10vw;
           height: 8vh;
-
         }
         // 에러 메시지 영역
         div:nth-child(2) {
