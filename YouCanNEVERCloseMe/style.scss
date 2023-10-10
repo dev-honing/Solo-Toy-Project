@@ -2,17 +2,38 @@
   color: $color;
   background-color: $bg-color;
 }
+@mixin set-border{
+  border: 1px solid #000;
+}
+@mixin set-flex{
+  display: flex;
+}
 * {
   margin: 0;
   padding: 0;
 }
-
 #root {
   width: 100vw;
   height: 100vh;
   @include set-color(#000,#f0f0f0);
-  div {
-    @include set-color(#000,#f0f0f0);
+  #container{
+    width: 35vw;
+    height: 10vh;
+    @include set-border;
+    flex-direction: column;
+
+    // Header
+    #container > div:nth-child(1) {
+      @include set-border;
+      @include set-flex;
+      flex-direction: row;
+    }
+    // Footer
+    #container > div:nth-child(2) {
+      @include set-border;
+      @include set-flex;
+      flex-direction: row;
+    }
   }
 }
 
