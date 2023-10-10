@@ -6,6 +6,12 @@
 #root {
   width: 100vw;
   height: 100vh;
+  color: #000;
+  background-color: #f0f0f0;
+}
+#root div {
+  color: #000;
+  background-color: #f0f0f0;
 }
 
 /*# sourceMappingURL=output-test.css.map */

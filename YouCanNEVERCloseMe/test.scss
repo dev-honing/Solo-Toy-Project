@@ -1,3 +1,7 @@
+@mixin set-color($color, $bg-color){
+  color: $color;
+  background-color: $bg-color;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +10,12 @@
 #root {
   width: 100vw;
   height: 100vh;
+  @include set-color(#000,#f0f0f0);
+  div {
+    @include set-color(#000,#f0f0f0);
+    
+  }
 }
+
+
+
