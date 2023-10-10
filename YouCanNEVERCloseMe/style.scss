@@ -7,6 +7,12 @@
 }
 @mixin set-flex{
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin text-align{
+  text-align: center;
+  vertical-align: middle;
 }
 * {
   margin: 0;
@@ -18,8 +24,6 @@
   height: 100vh;
   @include set-color(#000,#f0f0f0);
   @include set-flex;
-  justify-content: center;
-  align-items: center;
   // container 영역
   #container{
     width: 70vw;
@@ -30,32 +34,56 @@
 
     div {
       @include set-flex;
+      flex-direction: row;
     }
 
       // Header 영역
       div:nth-child(1) {
       @include set-border;
       @include set-flex;
-      @include set-color(#000, #999);
-      flex-direction: row;
+      @include set-color(#000, #34b7eb);
       width: 70vw;
       height: 2vh;
+        div {
+          @include text-align;
+        }
         // 에러 제목 텍스트 영역
-        div:nth-child(1) {}
+        div:nth-child(1) {
+          width: 35vw;
+          height: 2vh;
+          
+          
+        }
         // 닫기 버튼 영역
-        div:nth-child(2) {}
+        div:nth-child(2) {
+          width: 35vw;
+          height: 2vh;
+          
+        }
     }
       // Footer 영역
       div:nth-child(2) {
       @include set-border;
       @include set-flex;
-      flex-direction: row;
       width: 70vw;
       height: 8vh;
+      @include set-color(#000, #ebeced);
+      @include text-align;
         // 경고 이미지 영역
-        div:nth-child(1) {}
+        div:nth-child(1) {
+          width: 10vw;
+          height: 8vh;
+
+        }
         // 에러 메시지 영역
-        div:nth-child(2) {}
+        div:nth-child(2) {
+          width: 60vw;
+          height: 8vh;
+
+
+          
+        
+        }
     }
   }
 }
