@@ -16,23 +16,32 @@
   width: 100vw;
   height: 100vh;
   @include set-color(#000,#f0f0f0);
+  @include set-flex;
+  justify-content: center;
+  align-items: center;
+  
   #container{
-    width: 35vw;
+    width: 70vw;
     height: 10vh;
     @include set-border;
     flex-direction: column;
+    
 
     // Header
     #container > div:nth-child(1) {
       @include set-border;
       @include set-flex;
       flex-direction: row;
+      width: 70vw;
+      height: 2vh;
     }
     // Footer
     #container > div:nth-child(2) {
       @include set-border;
       @include set-flex;
       flex-direction: row;
+      width: 70vw;
+      height: 8vh;
     }
   }
 }
