@@ -45,7 +45,8 @@
       height: 2vh;
         div {
           @include text-align;
-          @include set-color(#000, #34b7eb);
+          font-size: smaller;
+          @include set-color(#e6dbda, #34b7eb);
         }
         // 에러 제목 텍스트 영역
         div:nth-child(1) {
@@ -56,6 +57,9 @@
         div:nth-child(2) {
           width: 35vw;
           height: 2vh;
+          button {
+            
+          }
         }
     }
       // Footer 영역
@@ -66,12 +70,16 @@
       height: 8vh;
       @include text-align;
         div { 
-          @include set-color(#000, #ebeced);
+          @include set-color(#ff0d00, #ebeced);
         }
         // 경고 이미지 영역
         div:nth-child(1) {
           width: 10vw;
           height: 8vh;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
         }
         // 에러 메시지 영역
         div:nth-child(2) {

@@ -32,14 +32,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000;
-  background-color: #34b7eb;
   width: 70vw;
   height: 2vh;
 }
 #root #container div:nth-child(1) div {
   text-align: center;
   vertical-align: middle;
+  font-size: smaller;
+  color: #e6dbda;
+  background-color: #34b7eb;
 }
 #root #container div:nth-child(1) div:nth-child(1) {
   width: 35vw;
@@ -56,14 +57,20 @@
   align-items: center;
   width: 70vw;
   height: 8vh;
-  color: #000;
-  background-color: #ebeced;
   text-align: center;
   vertical-align: middle;
+}
+#root #container div:nth-child(2) div {
+  color: #ff0d00;
+  background-color: #ebeced;
 }
 #root #container div:nth-child(2) div:nth-child(1) {
   width: 10vw;
   height: 8vh;
+}
+#root #container div:nth-child(2) div:nth-child(1) img {
+  max-width: 100%;
+  max-height: 100%;
 }
 #root #container div:nth-child(2) div:nth-child(2) {
   width: 60vw;
