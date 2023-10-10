@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "sass" : "sass test.scss output-test.css"
+    "sass" : "sass style.scss output-style.css"
   },
   "author": "",
   "license": "ISC",
