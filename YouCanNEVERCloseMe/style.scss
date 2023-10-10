@@ -28,7 +28,7 @@
   #container{
     width: 70vw;
     height: 10vh;
-    @include set-border;
+    // @include set-border;
     @include set-flex;
     flex-direction: column;
 
@@ -46,6 +46,7 @@
         div {
           @include text-align;
           font-size: smaller;
+          font-weight:bolder;
           @include set-color(#e6dbda, #34b7eb);
         }
         // 에러 제목 텍스트 영역
@@ -58,7 +59,10 @@
           width: 35vw;
           height: 2vh;
           button {
-            
+            @include set-color(#e6dbda, #fc5047);
+            min-width: 8vw;
+            max-height: 2vh;
+            border: 0.1px solid #000;
           }
         }
     }
@@ -69,6 +73,7 @@
       width: 70vw;
       height: 8vh;
       @include text-align;
+      font-weight:bolder;
         div { 
           @include set-color(#ff0d00, #ebeced);
         }

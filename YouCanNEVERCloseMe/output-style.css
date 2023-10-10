@@ -15,7 +15,6 @@
 #root #container {
   width: 70vw;
   height: 10vh;
-  border: 1px solid #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +38,7 @@
   text-align: center;
   vertical-align: middle;
   font-size: smaller;
+  font-weight: bolder;
   color: #e6dbda;
   background-color: #34b7eb;
 }
@@ -50,6 +50,13 @@
   width: 35vw;
   height: 2vh;
 }
+#root #container div:nth-child(1) div:nth-child(2) button {
+  color: #e6dbda;
+  background-color: #fc5047;
+  min-width: 8vw;
+  max-height: 2vh;
+  border: 0.1px solid #000;
+}
 #root #container div:nth-child(2) {
   border: 1px solid #000;
   display: flex;
@@ -59,6 +66,7 @@
   height: 8vh;
   text-align: center;
   vertical-align: middle;
+  font-weight: bolder;
 }
 #root #container div:nth-child(2) div {
   color: #ff0d00;
