@@ -4,8 +4,8 @@ const throwBall = setInterval(callback, 2000); // 2초마다 투구
 count = 0; 
 function callback(){
   count++;
-  console.log(`제${[count]}구, 투수 와인드업`);
+  console.log(`제${[count]}구: 투수 와인드업`);
   }
 setTimeout(function(){
   clearInterval(throwBall);
-}, 30000) // 30초 뒤 종료
+}, 30100) // 30초 뒤 종료
