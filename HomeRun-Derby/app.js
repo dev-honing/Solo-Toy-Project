@@ -6,31 +6,4 @@ function callback(){
     clearInterval(throwBall);
   }, 30000) // 30초 뒤 종료
   }
-  // 콘솔 출력 확인
-  2
-default: 2
-app.js:3
-제undefined구
-app.js:3
-투수 와인드업
-app.js:4
-2
-default: 3
-app.js:3
-제undefined구
-app.js:3
-투수 와인드업
-app.js:4
-2
-default: 4
-app.js:3
-제undefined구
-app.js:3
-투수 와인드업
-app.js:4
-2
-default: 5
-app.js:3
-제undefined구
-app.js:3
-투수 와인드업
+  // 콘솔 출력 원하는 방향 : "제n구" + "투수 와인드업"
