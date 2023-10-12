@@ -45,21 +45,24 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 #root #container #pitchingMachine {
   border: 1px solid #000;
-  width: 10vw;
-  height: 10vw;
+  width: 30vw;
+  height: 30vw;
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
 }
 #root #container #pitchingMachine img {
   position: relative;
   left: 100px;
   top: 0px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #000;
   border-radius: 50%;
   animation: ball 1.5s ease-in Infinite Alternate;
@@ -69,12 +72,12 @@
     left: 0px;
   }
   95% {
-    width: 30px;
+    width: 20px;
   }
   to {
     right: 300px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }
 #root #container #gameScreen {

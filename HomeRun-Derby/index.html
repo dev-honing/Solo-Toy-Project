@@ -14,6 +14,7 @@
     <div id="container">
       <div id="pitchingMachine">
         <img src="ball_bouncing.png" alt="ballBouncing">
+        피칭머신
       </div>
       <div id="gameScreen">
         <img src="bat.png" id="Bat">
@@ -25,10 +26,22 @@
   <script>
     const HIT = document.getElementById("HIT");
     const gameScreen = document.getElementById("gameScreen");
+    const pitch = document.getElementById("pitchingMachine");
     const imgBat = document.getElementById("Bat");
+
+    // 반복해서 공을 던질 CSS애니메이션 작성
+    setInterval(function throwBall() {
+      pitch.backgruondImage.src = "0.jpg";
+    }, 1000);
+    setInterval(function throwBall(){
+      pitch.backgruondImage.src = "1.jpg";
+    }, 2000);
+
+    // HIT 버튼 누르면 생길 이벤트 작성
     HIT.addEventListener("click", (event) => {
-      gameScreen.style.backgroundColor = "red";
-      // gmaeScreen div를 red하는 거에서 
+      imgBat.src = "ball_hit.png";
+      
+      
     })
     
     
