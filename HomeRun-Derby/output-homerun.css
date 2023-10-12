@@ -4,18 +4,23 @@
 }
 
 #alert {
+  position: absolute;
+  font-size: larger;
+  font-weight: bolder;
   text-align: center;
+  display: flex;
+  position: relative;
+  position: absolute;
+  z-index: 3;
   animation-duration: 3s;
   animation-name: slidein;
 }
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 300%;
+    right: 0vw;
   }
   to {
-    margin-left: 0%;
-    width: 100%;
+    right: 50vw;
   }
 }
 
@@ -23,8 +28,9 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 #root #pitchingMachine {
@@ -32,6 +38,7 @@
   width: 10vw;
   height: 10vw;
   display: flex;
+  position: relative;
 }
 #root #container {
   width: 20vw;
@@ -40,6 +47,7 @@
   border: 1px solid #000;
   flex-direction: column;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -47,7 +55,7 @@
   width: 25vw;
   height: 40vh;
   transform: scaleX(-1);
-  transform: rotate3d(300%);
+  transform: rotate(300%);
   transition: 2s;
 }
 #root #container #HIT {

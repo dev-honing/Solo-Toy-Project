@@ -1,23 +1,24 @@
 @mixin flex-setting(){
   display: flex;
+  position: relative;
 }
 @mixin bat-ready{
   transform: scaleX(-1);
-  transform: rotate3d(300%);
+  transform: rotate(300%);
   transition: 2s;
 
 }
 @mixin bat-hit{
 }
 @mixin slidein(){
+  animation-duration: 3s;
+  animation-name: slidein;
   @keyframes slidein {
     from{
-      margin-left: 100%;
-      width: 300%;
+      right: 0vw;
     }
     to {
-      margin-left: 0%;
-      width: 100%;
+      right: 50vw;
     }
   } 
 }
@@ -27,9 +28,13 @@
   padding: 0;
 }
 #alert {
+  position: absolute;
+  font-size: larger;
+  font-weight: bolder;
   text-align: center;
-  animation-duration: 3s;
-  animation-name: slidein;
+  @include flex-setting;
+  position: absolute;
+  z-index: 3;
   @include slidein;
 }
 #root {
@@ -37,9 +42,9 @@
   height: 100vh;
   @include flex-setting;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  
+    
     #pitchingMachine{
     border:1px solid #000;
     width: 10vw;
@@ -56,7 +61,7 @@
       @include flex-setting;
       justify-content: center;
       align-items: center;
-
+      
       #Bat {
         width: 25vw;
         height: 40vh;
