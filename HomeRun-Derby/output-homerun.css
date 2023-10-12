@@ -3,15 +3,28 @@
   padding: 0;
 }
 
-#alert {
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#root #scoreBoard {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  position: relative;
+}
+#root #scoreBoard h1 {
   position: absolute;
   font-size: larger;
   font-weight: bolder;
   text-align: center;
   display: flex;
   position: relative;
-  position: absolute;
-  z-index: 3;
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -23,42 +36,40 @@
     right: 50vw;
   }
 }
-
-#root {
+#root #container {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   position: relative;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
-#root #pitchingMachine {
+#root #container #pitchingMachine {
   border: 1px solid #000;
   width: 10vw;
   height: 10vw;
   display: flex;
   position: relative;
 }
-#root #container {
-  width: 20vw;
+#root #container #gameScreen {
+  width: 29vw;
   height: 60vh;
   background-color: whitesmoke;
-  border: 1px solid #000;
   flex-direction: column;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
-#root #container #Bat {
+#root #container #gameScreen #Bat {
   width: 25vw;
   height: 40vh;
   transform: scaleX(-1);
   transform: rotate(300%);
   transition: 2s;
 }
-#root #container #HIT {
+#root #container #gameScreen #HIT {
   justify-items: center;
   width: 10vw;
   height: 5vh;

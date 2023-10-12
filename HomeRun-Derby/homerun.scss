@@ -1,3 +1,6 @@
+@mixin border-setting(){
+  border: 1px solid #000;
+}
 @mixin flex-setting(){
   display: flex;
   position: relative;
@@ -27,54 +30,65 @@
   margin: 0;
   padding: 0;
 }
-#alert {
-  position: absolute;
-  font-size: larger;
-  font-weight: bolder;
-  text-align: center;
-  @include flex-setting;
-  position: absolute;
-  z-index: 3;
-  @include slidein;
-}
 #root {
   width: 100vw;
   height: 100vh;
   @include flex-setting;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-    
-    #pitchingMachine{
-    border:1px solid #000;
-    width: 10vw;
-    height: 10vw;
-    @include flex-setting;
-  }
-    
-    #container {
-      width: 20vw;
-      height: 60vh;
-      background-color: whitesmoke;
-      border: 1px solid #000;
-      flex-direction: column;
+  justify-content: center;
+  
+    #scoreBoard{
+      width: 100vw;
+      height: 20vh;
       @include flex-setting;
-      justify-content: center;
-      align-items: center;
-      
-      #Bat {
-        width: 25vw;
-        height: 40vh;
-        @include bat-ready;
-      }
-      #Bat-hit {
-        @include bat-hit;
-      }
-      #HIT {
-        justify-items: center;
-        width: 10vw;
-        height: 5vh;
-        background-color:rgb(159, 240, 213);
-      }
+        h1 {
+          position: absolute;
+          font-size: larger;
+          font-weight: bolder;
+          text-align: center;
+          @include flex-setting;
+          @include slidein;
+        }
     }
+    #container{
+      width: 100vw;
+      height: 80vh;
+      @include flex-setting;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+        #pitchingMachine{
+          @include border-setting;
+          width: 10vw;
+          height: 10vw;
+          @include flex-setting;
+        }
+      #gameScreen {
+        width: 29vw;
+        height: 60vh;
+        background-color: whitesmoke;
+        flex-direction: column;
+        @include flex-setting;
+        justify-content: center;
+        align-items: center;
+          
+          #Bat {
+            width: 25vw;
+            height: 40vh;
+            @include bat-ready;
+          }
+          #Bat-hit {
+            @include bat-hit;
+          }
+          #HIT {
+            justify-items: center;
+            width: 10vw;
+            height: 5vh;
+            background-color:rgb(159, 240, 213);
+          } 
+    }
+
+    }
+    
 }
