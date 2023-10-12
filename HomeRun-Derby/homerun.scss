@@ -1,9 +1,13 @@
 @mixin flex-setting(){
   display: flex;
 }
-@mixin bat-rotate(){
-  transform: rotate(75deg);
+@mixin bat-ready{
+  transform: scaleX(-1);
+  transform: rotate3d(300%);
   transition: 2s;
+
+}
+@mixin bat-hit{
 }
 @mixin slidein(){
   @keyframes slidein {
@@ -56,9 +60,10 @@
       #Bat {
         width: 25vw;
         height: 40vh;
-        transform: scaleX(-1);
-        @include bat-rotate;
-        
+        @include bat-ready;
+      }
+      #Bat-hit {
+        @include bat-hit;
       }
       #HIT {
         justify-items: center;
