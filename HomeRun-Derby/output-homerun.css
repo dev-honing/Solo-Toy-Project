@@ -17,6 +17,7 @@
   height: 20vh;
   display: flex;
   position: relative;
+  justify-content: center;
 }
 #root #scoreBoard h1 {
   position: absolute;
@@ -30,10 +31,10 @@
 }
 @keyframes slidein {
   from {
-    right: 0vw;
+    top: 0%;
   }
   to {
-    right: 50vw;
+    top: 65%;
   }
 }
 #root #container {

@@ -18,10 +18,10 @@
   animation-name: slidein;
   @keyframes slidein {
     from{
-      right: 0vw;
+      top: 0%;
     }
     to {
-      right: 50vw;
+      top: 65%;
     }
   } 
 }
@@ -42,6 +42,7 @@
       width: 100vw;
       height: 20vh;
       @include flex-setting;
+      justify-content: center;
         h1 {
           position: absolute;
           font-size: larger;
