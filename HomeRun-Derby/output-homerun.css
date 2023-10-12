@@ -28,6 +28,8 @@
   width: 25vw;
   height: 35vh;
   transform: scaleX(-1);
+  transform: rotate(75deg);
+  transition: 1s;
 }
 #root #container #HIT {
   justify-items: center;

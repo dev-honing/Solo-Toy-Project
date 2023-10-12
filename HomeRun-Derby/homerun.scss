@@ -1,7 +1,10 @@
 @mixin flex-setting(){
   display: flex;
 }
-
+@mixin bat-rotate(){
+  transform: rotate(75deg);
+  transition: 1s;
+}
 
 * {
   margin: 0;
@@ -32,6 +35,8 @@
         width: 25vw;
         height: 35vh;
         transform: scaleX(-1);
+        @include bat-rotate;
+        
       }
       #HIT {
         justify-items: center;
