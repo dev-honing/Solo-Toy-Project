@@ -27,6 +27,7 @@
 #root #container #Bat {
   width: 25vw;
   height: 35vh;
+  transform: scaleX(-1);
 }
 #root #container #HIT {
   justify-items: center;
