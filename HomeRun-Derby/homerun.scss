@@ -5,23 +5,7 @@
   transform: rotate(75deg);
   transition: 2s;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-#root {
-  width: 100vw;
-  height: 100vh;
-  @include flex-setting;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    text-align: center;
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
+@mixin slidein(){
   @keyframes slidein {
     from{
       margin-left: 100%;
@@ -31,10 +15,36 @@
       margin-left: 0%;
       width: 100%;
     }
-  }
+  } 
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+#alert {
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+  @include slidein;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  @include flex-setting;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+    #pitchingMachine{
+    border:1px solid #000;
+    width: 10vw;
+    height: 10vw;
+    @include flex-setting;
+  }
+    
     #container {
-      width: 80vw;
+      width: 20vw;
       height: 60vh;
       background-color: whitesmoke;
       border: 1px solid #000;
@@ -52,7 +62,7 @@
       }
       #HIT {
         justify-items: center;
-        width: 30vw;
+        width: 10vw;
         height: 5vh;
         background-color:rgb(159, 240, 213);
       }

@@ -3,15 +3,7 @@
   padding: 0;
 }
 
-#root {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#root h1 {
+#alert {
   text-align: center;
   animation-duration: 3s;
   animation-name: slidein;
@@ -26,8 +18,23 @@
     width: 100%;
   }
 }
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#root #pitchingMachine {
+  border: 1px solid #000;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+}
 #root #container {
-  width: 80vw;
+  width: 20vw;
   height: 60vh;
   background-color: whitesmoke;
   border: 1px solid #000;
@@ -45,7 +52,7 @@
 }
 #root #container #HIT {
   justify-items: center;
-  width: 30vw;
+  width: 10vw;
   height: 5vh;
   background-color: rgb(159, 240, 213);
 }
