@@ -26,10 +26,10 @@
 }
 #root #container #Bat {
   width: 25vw;
-  height: 35vh;
+  height: 40vh;
   transform: scaleX(-1);
   transform: rotate(75deg);
-  transition: 1s;
+  transition: 2s;
 }
 #root #container #HIT {
   justify-items: center;
