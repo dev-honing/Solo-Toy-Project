@@ -14,22 +14,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h1 {
+    text-align: center;
+  }
 
     #container {
       width: 80vw;
       height: 60vh;
+      background-color: whitesmoke;
       border: 1px solid #000;
       flex-direction: column;
       @include flex-setting;
       justify-content: center;
       align-items: center;
-      h1 {
-        text-align: center;
+
+      #Bat {
+        width: 25vw;
+        height: 35vh;
       }
-      #button-HIT {
+      #HIT {
         justify-items: center;
         width: 30vw;
         height: 5vh;
+        background-color:rgb(159, 240, 213);
       }
     }
 }

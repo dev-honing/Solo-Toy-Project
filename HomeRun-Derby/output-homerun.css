@@ -11,22 +11,28 @@
   justify-content: center;
   align-items: center;
 }
+#root h1 {
+  text-align: center;
+}
 #root #container {
   width: 80vw;
   height: 60vh;
+  background-color: whitesmoke;
   border: 1px solid #000;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#root #container h1 {
-  text-align: center;
+#root #container #Bat {
+  width: 25vw;
+  height: 35vh;
 }
-#root #container #button-HIT {
+#root #container #HIT {
   justify-items: center;
   width: 30vw;
   height: 5vh;
+  background-color: rgb(159, 240, 213);
 }
 
 /*# sourceMappingURL=output-homerun.css.map */
