@@ -52,6 +52,30 @@
   height: 10vw;
   display: flex;
   position: relative;
+  align-items: center;
+}
+#root #container #pitchingMachine img {
+  position: relative;
+  left: 100px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  animation: ball 1.5s ease-in Infinite Alternate;
+}
+@keyframes ball {
+  0% {
+    left: 0px;
+  }
+  95% {
+    width: 30px;
+  }
+  to {
+    right: 300px;
+    width: 30px;
+    height: 30px;
+  }
 }
 #root #container #gameScreen {
   width: 29vw;

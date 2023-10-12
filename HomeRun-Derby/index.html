@@ -12,7 +12,9 @@
       <h1>버튼을 눌러 타격하세요!</h1>
     </div>
     <div id="container">
-      <div id="pitchingMachine"></div>
+      <div id="pitchingMachine">
+        <img src="ball_bouncing.png" alt="ballBouncing">
+      </div>
       <div id="gameScreen">
         <img src="bat.png" id="Bat">
         <button id="HIT">HIT!</button>
@@ -26,6 +28,7 @@
     const imgBat = document.getElementById("Bat");
     HIT.addEventListener("click", (event) => {
       gameScreen.style.backgroundColor = "red";
+      // gmaeScreen div를 red하는 거에서 
     })
     
     
