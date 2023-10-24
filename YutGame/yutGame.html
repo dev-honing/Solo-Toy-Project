@@ -15,12 +15,23 @@
       #root {
         width: 100vw;
         height: 100vh;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
       }
       .yut-board{
         display: grid;
+        width: 50vw;
+        height: 50vw;
+        border:1px solid #000;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
       }
-      .yut-cell{
-        
+      #yut-cell{
+        background-color: #fff;
+        border: 1px dotted #000;
       }
     </style>
     <div id="root">
