@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <style>
-
-  </style>
-  <div id="root">
-    <div id="grid-container">
-      <div id="grid-item">
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>윷놀이</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #root {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .yut-board {
+        width: 200px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1px;
+        background-color: #ccc;
+      }
+      .yut-cell {
+        border: 1px solid #000;
+        background-color: #fff;
+      }
+      
+    </style>
+    <div id="root">
+      <!-- 윷판(MAP) -->
+      <div class="yut-board">
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
+        <div class="yut-cell"></div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

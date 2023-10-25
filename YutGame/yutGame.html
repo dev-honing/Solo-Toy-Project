@@ -65,4 +65,24 @@
       </div>
     </div>
   </body>
+  <script>
+    // #yut-cell 요소를 선택합니다.
+const yutCell = document.getElementById("yut-cell");
+
+// #yut-cell 요소의 위치와 크기를 가져옵니다.
+const rect = yutCell.getBoundingClientRect();
+
+// 꼭짓점의 좌표를 계산합니다.
+const topLeft = { x: rect.left, y: rect.top };
+const topRight = { x: rect.left + rect.width, y: rect.top };
+const bottomLeft = { x: rect.left, y: rect.top + rect.height };
+const bottomRight = { x: rect.left + rect.width, y: rect.top + rect.height };
+
+console.log("Top Left:", topLeft);
+console.log("Top Right:", topRight);
+console.log("Bottom Left:", bottomLeft);
+console.log("Bottom Right:", bottomRight);
+
+topLef
+  </script>
 </html>
